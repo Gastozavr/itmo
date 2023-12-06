@@ -10,3 +10,4 @@
 - https://github.com/maxbarsukov/itmo
 - https://github.com/petrovviacheslav/myitmo
 
+Поставьте звезду ⭐, если вы нашли этот проект полезным.
