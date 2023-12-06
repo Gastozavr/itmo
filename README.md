@@ -7,8 +7,10 @@
 <img alt="Let's all love Lain!" src="https://github.com/Gastozavr/itmo/blob/main/pictures/main.gif" height="350" width="350">
 
 ## Полезные ссылки и другие репозитории
+- [Гайд для перваков](https://github.com/Imtjl/1st-year-guide)
 - https://github.com/maxbarsukov/itmo
 - https://github.com/petrovviacheslav/myitmo
+
 
 ## Напоминание
 Исходники предоставлены в ознакомительных целях, могут присутствовать ошибки, лучше писать самостоятельно.Автор всего лишь олимпиадник, который пытается выжить в суровых реалиях ИТМО.
