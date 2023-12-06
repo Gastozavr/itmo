@@ -6,4 +6,7 @@
 
 <img alt="Let's all love Lain!" src="https://github.com/Gastozavr/itmo/blob/main/pictures/main.gif" height="350" width="350">
 
+## Полезные ссылки и другие репозитории
+- https://github.com/maxbarsukov/itmo
+- https://github.com/petrovviacheslav/myitmo
 
