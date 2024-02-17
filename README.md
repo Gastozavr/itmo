@@ -17,11 +17,11 @@
 | Программирование | :white_check_mark: | :construction: | - | - | - | - | - | - |
 | Информатика | :white_check_mark: | - | - | - | - | - | - | - |
 | Дискретная математика | :white_check_mark: | :construction: | - | - | - | - | - | - |
-| Мат. анализ | :white_check_mark: | :construction: | - | - | - | - | - | - |
-| Лин. алгебра | :white_check_mark: | :construction: | - | - | - | - | - | - |
+| Математический анализ | :white_check_mark: | :construction: | - | - | - | - | - | - |
+| Линейная алгебра | :white_check_mark: | :construction: | - | - | - | - | - | - |
 | Англ язык | :white_check_mark: | :construction: | - | - | - | - | - | - |
 | История (ИРК) | :white_check_mark: | - | - | - | - | - | - | - |
-| Физ-ра | :white_check_mark: | :construction: | - | - | - | - | - | - |
+| Физическая культура | :white_check_mark: | :construction: | - | - | - | - | - | - |
 | Базы данных | - | :construction: | - | - | - | - | - | - |
 | Безопасность жизнедеятельности | - | :construction: | - | - | - | - | - | - |
 | Коммуникации и командообразование | - | :construction: | - | - | - | - | - | - |
