@@ -18,9 +18,9 @@
 | Информатика | :white_check_mark: | - | - | - | - | - | - | - |
 | Дискретная математика | :white_check_mark: | :construction: | - | - | - | - | - | - |
 | Мат. анализ | :white_check_mark: | :construction: | - | - | - | - | - | - |
-| Лин. алгебра | :white_check_mark: (85)| :construction: | - | - | - | - | - | - |
-| Англ язык | :white_check_mark: (69)| :construction: | - | - | - | - | - | - |
-| История (ИРК) | :white_check_mark: (91.75)| - | - | - | - | - | - | - |
+| Лин. алгебра | :white_check_mark: | :construction: | - | - | - | - | - | - |
+| Англ язык | :white_check_mark: | :construction: | - | - | - | - | - | - |
+| История (ИРК) | :white_check_mark: | - | - | - | - | - | - | - |
 | Физ-ра | :white_check_mark: | :construction: | - | - | - | - | - | - |
 | Базы данных | - | :construction: | - | - | - | - | - | - |
 | Безопасность жизнедеятельности | - | :construction: | - | - | - | - | - | - |
