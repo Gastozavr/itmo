@@ -4,7 +4,7 @@
 Данный проект создан для студентов СППО и смежных с ним направлений, а также для тех, кто только только планирует поступать в ИТМО и выбирает направление.
 Здесь можно найти лабораторные работы/тесты/рубежки/контрольные работы/экзамены и многое другое.
 
-<img alt="Let's all love Lain!" src="https://github.com/Gastozavr/itmo/blob/main/pictures/main.gif" "350" width="350">
+<img alt="Let's all love Lain!" src="https://github.com/Gastozavr/itmo/blob/main/pictures/main.gif" width="350" height="350">
 
 ## Полезные ссылки и другие репозитории
 - [Гайд для перваков](https://github.com/Imtjl/1st-year-guide)
