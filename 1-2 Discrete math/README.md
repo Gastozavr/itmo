@@ -7,7 +7,7 @@
 Для получения зачета необходимо сдать курсовую работу и 8 дз(на 4-8 имеются решаторы)
 
 [Кубы](https://t.me/+qO4dE84coBlkNDU6)
-
+## Решаторы домашних заданий
 - [дз4](https://205826.github.io/T2P/T2P_EDITOR.html?id=149999)
 - [дз5](https://205826.github.io/T2P/T2P_EDITOR.html?id=149998)
 - [дз6](https://205826.github.io/T2P/T2P_EDITOR.html?id=149997)
