@@ -4,6 +4,7 @@
 <img alt="pls expell me" src="https://github.com/Gastozavr/itmo/blob/main/pictures/history.jpg" height="250">
 
 [лекции по истории](https://disk.yandex.ru/d/8pxwf3wspCZphA)
+
 **Группа**: ИРК 2.6
 
 **Лектор**: Жиркова Галина Петровна (gpzhirkova.art@mail.ru)
@@ -14,5 +15,6 @@
 
 - 1 семестр: **отлично (5A)**
 
-##Внимание!
+## Внимание!
+
 Тесты были взяты у [Барсукова Максима](https://github.com/maxbarsukov)
