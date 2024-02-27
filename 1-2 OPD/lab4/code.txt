@@ -1,0 +1,47 @@
+ORG 0xD4
+CLA
+ST result
+LD x
+PUSH
+CALL $function
+POP
+ADD result
+ST result
+LD z
+DEC
+PUSH
+CALL $function
+POP
+INC
+SUB result
+ST result
+LD y
+DEC
+PUSH
+CALL $function
+POP
+INC
+SUB result
+ST result
+HLT
+z: WORD 0xFFEA
+y: WORD 0x7D
+x: WORD 0xFD9
+result: WORD 0x1
+
+ORG 0x654
+function:
+LD &1
+BMI exit
+BEQ exit
+CMP q
+BGE exit
+ADD &1
+SUB w
+JUMP return
+exit: LD q
+return: ST &1
+RET
+q: WORD 0xFD9
+w: WORD 0xF8
+
