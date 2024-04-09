@@ -1,0 +1,77 @@
+ORG 0x0
+V0: WORD $default, 0x180 ; задаются вектора прерываний
+V1: WORD $default, 0x180
+V2: WORD $int2, 0x180
+V3: WORD $int3, 0x180
+V4: WORD $default, 0x180
+V5: WORD $default, 0x180
+V6: WORD $default, 0x180
+V7: WORD $default, 0x180
+default: IRET ; обработака прерывания по умолчанию
+
+ORG 0x4A
+X: WORD ? ; переменная х
+min: WORD 0xFFE8 ; -24, минимальное значение Х
+max: WORD 0x19 ; 25, максимальное значение Х
+START: DI
+CLA
+OUT 0x1 ; запрет прерываний для неиспользуемых устройств
+OUT 0xB
+OUT 0xD
+OUT 0x11
+OUT 0x15
+OUT 0x19
+OUT 0x1D
+LD #0xA ; загрузка в аккумулятор MR (1000|0010=1010)
+OUT 5 ; разрешение прерываний для ВУ-2
+LD #0xB ; загрузка в аккумулятор MR (1000|0011=1011)
+OUT 7 ; разрешение прерываний для ВУ-3
+
+main: DI ; основная программа
+LD X
+ADD #3
+CALL $check
+ST X
+EI
+JUMP main
+
+check: ; проврека принадлежности Х ОДЗ
+check_min: CMP min ; проверка нижней границы
+BLT ld_min
+check_max: CMP max ; проверка верхней границы
+BLT return
+ld_min: LD min ; запись минимального значения в переменную
+return: RET ; метка возврата из проверки
+
+int2: ; обработка прерывания на ВУ-2
+IN 4
+PUSH 
+NOT
+PUSH
+NOP
+LD X
+OR &1
+PUSH
+LD X 
+NOT
+OR &1
+AND &0
+NOT
+CALL $check
+ST X
+POP
+POP
+POP
+NOP
+IRET
+
+int3: ; обработка прерывания на ВУ-3
+LD #0xE7
+ASL
+ASL
+ADD X
+SUB #6
+CALL check
+OUT 6
+NOP
+IRET
