@@ -1,0 +1,78 @@
+BEGIN;
+CREATE TABLE IF NOT EXISTS Object_type(
+  Id SERIAL PRIMARY KEY, Name TEXT UNIQUE NOT NULL
+);
+CREATE TABLE IF NOT EXISTS Figures(
+  Id SERIAL PRIMARY KEY, 
+  Name TEXT UNIQUE NOT NULL, 
+  Num_corners INTEGER CHECK(Num_corners >= 0)
+);
+CREATE TABLE IF NOT EXISTS Object(
+  Id SERIAL PRIMARY KEY, 
+  Name TEXT NOT NULL DEFAULT 'Noname', 
+  Type_id INTEGER REFERENCES Object_type(id), 
+  Form_id INTEGER REFERENCES Figures(id)
+);
+CREATE TABLE IF NOT EXISTS Move_type(
+  Id SERIAL PRIMARY KEY, 
+  Name TEXT UNIQUE NOT NULL
+);
+CREATE TABLE IF NOT EXISTS Available_actions(
+  Object_id INTEGER REFERENCES Object(id), 
+  Move_id INTEGER REFERENCES Object_type(id), 
+  PRIMARY KEY(Object_id, Move_id)
+);
+CREATE TABLE IF NOT EXISTS Moves(
+  Id SERIAL PRIMARY KEY, 
+  Start_object INTEGER REFERENCES Object(id), 
+  Moved_object INTEGER NOT NULL REFERENCES Object(id), 
+  Target_object INTEGER NOT NULL REFERENCES Object(id), 
+  Move_type INTEGER REFERENCES Move_type(id), 
+  Time TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+CREATE TABLE IF NOT EXISTS Changing_brightness(
+  Id SERIAL PRIMARY KEY, 
+  Watcher INTEGER REFERENCES Object(id), 
+  Object_id INTEGER REFERENCES Object(id), 
+  Brightness SMALLINT CHECK(
+    Brightness >= 0 
+    AND Brightness <= 100
+  ), 
+  Time TIMESTAMPTZ NOT NULL DEFAULT NOW(), 
+  Action INTEGER REFERENCES Moves(id)
+);
+INSERT INTO Figures(Name, Num_corners) 
+VALUES 
+  ('Прямоугольник', 4), 
+  ('Линия', 0), 
+  ('Без формы', 0), 
+  ('Круг', 2147483647);
+INSERT INTO Object_type(Name) 
+VALUES 
+  ('Человек'), 
+  ('Космический объект'), 
+  ('Космический транспорт');
+INSERT INTO Object(Name, Type_id, Form_id) 
+VALUES 
+  ('Прямоугольник', 2, 1), 
+  ('Солнце', 2, 4), 
+  ('Черточки звезд', 2, 2), 
+  ('Млечное небо', 2, 3), 
+  ('Капсула', 3, 4), 
+  ('Наблюдатель', 1, 3), 
+  ('Скопление облаков', 2, 3);
+INSERT INTO Move_type(Name) 
+VALUES 
+  ('Полет');
+INSERT INTO Moves(
+  Start_object, Moved_object, Target_object, Move_type) 
+VALUES 
+  (NULL, 3, 4, 1), 
+  (NULL, 5, 7, 1);
+INSERT INTO Changing_brightness (
+Watcher, Object_id, Brightness, Action) 
+VALUES 
+  (6, 1, 80, NULL), 
+  (6, 3, 30, 1), 
+  (6, 2, 100, NULL);
+END;
