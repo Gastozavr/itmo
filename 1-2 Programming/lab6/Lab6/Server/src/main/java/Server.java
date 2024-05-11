@@ -30,7 +30,7 @@ public class Server {
             System.exit(1);
 
         }
-        var networkManager = new NetworkManager(1234, 800);
+        var networkManager = new NetworkManager(17534, 800);
         while (!networkManager.init()) {
             logger.info("Менеджер сетевого взаимодействия инициализирован!");
         }

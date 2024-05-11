@@ -18,8 +18,8 @@ public class NetworkManager {
         this.timeout = timeout;
     }
     void defaultInit() throws UnknownHostException, SocketException {
-        host = InetAddress.getLocalHost();
-        port = 1234;
+        host = InetAddress.getByName("helios.cs.ifmo.ru");
+        port = 17534;
         ds = new DatagramSocket();
         ds.setSoTimeout(timeout);
     }
