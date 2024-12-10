@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<ui:composition template="templates/header.xhtml">
+    <ui:define name="title">Главная страница</ui:define>
+    <ui:define name="content">
+        <h:outputStylesheet>
+            .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            }
+
+            .time-box {
+            margin: 50px auto;
+            display: inline-block;
+            padding: 15px 30px;
+            border: 2px solid #000;
+            border-radius: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            background-color: #fff;
+            margin-bottom: 20px;
+            }
+        </h:outputStylesheet>
+
+        <h:panelGroup layout="block" styleClass="content">
+            <!-- Блок отображения времени -->
+            <div class="time-box" id="currentTime">Загрузка времени...</div>
+
+            <!-- Кнопка перехода -->
+            <h:form>
+                <h:commandButton value="Перейти к основной странице" action="main.xhtml" styleClass="return-button"/>
+            </h:form>
+        </h:panelGroup>
+
+        <script>
+            function updateTime() {
+                const now = new Date();
+                const formattedTime = now.toLocaleString('ru-RU', {
+                    year: 'numeric',
+                    month: '2-digit',
+                    day: '2-digit',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit'
+                });
+                document.getElementById('currentTime').innerText = formattedTime;
+            }
+
+            // Обновляем время каждые 13 секунд
+            setInterval(updateTime, 13000);
+
+            // Устанавливаем начальное значение
+            document.addEventListener("DOMContentLoaded", updateTime);
+        </script>
+    </ui:define>
+</ui:composition>
+</html>

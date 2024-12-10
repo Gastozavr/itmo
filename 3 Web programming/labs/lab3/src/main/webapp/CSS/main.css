@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #1f1f1f;
+}
+
+button {
+    color: white;
+    margin: 0 5px 0;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: black;
+    border: 2px solid black;
+}
+
+.x-button.active {
+    background-color: #454545;
+    color: white;
+}
+
+form {
+    color: white;
+}
+
+.r-buttons {
+    margin: 10px auto;
+    font-size: 0.5em;
+}
+
+.Y-text {
+    margin: 10px auto;
+}
+
+#enter {
+    margin: 20px auto;
+}
+
+.return-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #fbfbfb;
+    color: black;
+}

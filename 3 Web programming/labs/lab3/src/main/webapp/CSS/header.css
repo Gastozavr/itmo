@@ -1,0 +1,64 @@
+header span {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 5px darkgoldenrod, 0 0 10px darkgoldenrod, 0 0 15px darkgoldenrod, 0 0 20px darkgoldenrod;
+}
+
+.game-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0 0 5px darkgoldenrod, 0 0 10px darkgoldenrod, 0 0 15px darkgoldenrod, 0 0 20px darkgoldenrod;
+    margin-left: 20px;
+}
+
+.student-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    font-size: 30px;
+    text-align: right;
+    text-shadow: 0 0 5px darkgoldenrod, 0 0 10px darkgoldenrod, 0 0 15px darkgoldenrod, 0 0 20px darkgoldenrod;
+    margin-right: 20px;
+}
+
+header > a, img {
+    width: 130px;
+    margin-top: 10px;
+    margin-left: 80px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+img:hover {
+    transition: 0.1s;
+    border-radius: 40%;
+    border: 2px solid goldenrod;
+    transform: scale(0.9);
+    box-shadow: 0 0 20px 2px darkgoldenrod;
+}
+
+img {
+    transition: 0.1s;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+    margin: 20px 40px auto;
+    flex-direction: column;
+}
+
+.student-info {
+    margin-top: 45px;
+}

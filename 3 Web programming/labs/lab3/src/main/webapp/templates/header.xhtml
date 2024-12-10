@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<h:head>
+    <title><ui:insert name="title">Default Title</ui:insert></title>
+    <!-- Подключение CSS-файлов -->
+    <link rel="stylesheet" type="text/css" href="#{request.contextPath}/CSS/header.css" />
+    <link rel="stylesheet" type="text/css" href="#{request.contextPath}/CSS/footer.css" />
+    <link rel="stylesheet" type="text/css" href="#{request.contextPath}/CSS/main.css" />
+    <link rel="stylesheet" type="text/css" href="#{request.contextPath}/CSS/tables.css" />
+
+    <!-- Встроенные стили -->
+    <style>
+        header {
+            height: 170px;
+            display: flex;
+            background-color: black;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 0 5px darkgoldenrod, 0 0 10px darkgoldenrod, 0 0 15px darkgoldenrod, 0 0 20px darkgoldenrod;
+            font-family: fantasy;
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+</h:head>
+<h:body>
+    <h:panelGroup layout="block">
+        <!-- Хедер -->
+        <header>
+            <h:panelGroup layout="block" styleClass="game-title">
+                <h:outputText value="Touch" />
+                <br />
+                <h:outputText value="my" />
+                <br />
+                <h:outputText value="points" />
+            </h:panelGroup>
+
+            <!-- Логотип -->
+            <a href="https://github.com/Gastozavr">
+                <img src="#{request.contextPath}/IMG/logo.jpeg" alt="Logo" />
+            </a>
+
+            <!-- Информация о студенте -->
+            <h:panelGroup layout="block" styleClass="student-info">
+                <h:outputText value="Schmunk Andrew P3208" />
+                <br />
+                <h:outputText value="Variant 31314" />
+            </h:panelGroup>
+        </header>
+
+        <!-- Вставка контента страницы -->
+        <ui:insert name="content">
+            <!-- Placeholder for page-specific content -->
+        </ui:insert>
+    </h:panelGroup>
+</h:body>
+</html>
