@@ -19,3 +19,6 @@
 [submodule "3 Web programming/labs/lab4"]
 	path = 3 Web programming/labs/lab4
 	url = https://github.com/Gastozavr-itmo/web-lab4
+[submodule "1-2 Programming/lab8"]
+	path = 1-2 Programming/lab8
+	url = https://github.com/Gastozavr-itmo/programming-lab8
