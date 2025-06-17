@@ -1,1 +1,43 @@
+# --- macOS system files ---
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# --- Windows system files ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.BIN/
+
+# --- Microsoft Office temporary files ---
+~
+*.tmp
+*.bak
+
+# --- LibreOffice / OpenOffice lock files ---
+.~lock.*
+
+# --- VS Code and other editors ---
+.vscode/
+*.code-workspace
+*.sublime-workspace
+*.sublime-project
+
+# --- General system files and metadata ---
+*.swp
+*.swo
+*.orig
+*.log
+*.cache
+*.pid
+*.seed
+*.gz~
+*.log~
+
+# --- Node and Python environments (опционально) ---
+node_modules/
+.env
+venv/
+__pycache__/
+*.pyc
+

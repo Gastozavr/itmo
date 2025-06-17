@@ -1,5 +1,0 @@
-rootProject.name = 'untitled10'
-include 'Client'
-include 'Server'
-include 'Common'
-

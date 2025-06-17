@@ -1,0 +1,21 @@
+[submodule "1-2 Programming/lab5"]
+	path = 1-2 Programming/lab5
+	url = https://github.com/Gastozavr-itmo/programming-lab5
+[submodule "1-2 Programming/lab6"]
+	path = 1-2 Programming/lab6
+	url = https://github.com/Gastozavr-itmo/programming-lab6
+[submodule "1-2 Programming/lab7"]
+	path = 1-2 Programming/lab7
+	url = https://github.com/Gastozavr-itmo/programming-lab7
+[submodule "3 Web programming/labs/lab1"]
+	path = 3 Web programming/labs/lab1
+	url = https://github.com/Gastozavr-itmo/web-lab1
+[submodule "3 Web programming/labs/lab2"]
+	path = 3 Web programming/labs/lab2
+	url = https://github.com/Gastozavr-itmo/web-lab2
+[submodule "3 Web programming/labs/lab3"]
+	path = 3 Web programming/labs/lab3
+	url = https://github.com/Gastozavr-itmo/web-lab3
+[submodule "3 Web programming/labs/lab4"]
+	path = 3 Web programming/labs/lab4
+	url = https://github.com/Gastozavr-itmo/web-lab4
